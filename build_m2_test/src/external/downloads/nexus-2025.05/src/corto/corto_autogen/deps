@@ -1,0 +1,24 @@
+corto_autogen/timestamp: \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/CMakeLists.txt \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/bitstream.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/color_attribute.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/corto.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/cstream.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/decoder.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/encoder.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/index_attribute.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/normal_attribute.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/point.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/tunstall.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/vertex_attribute.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/include/corto/zpoint.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/src/bitstream.cpp \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/src/color_attribute.cpp \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/src/corto_codec.cpp \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/src/corto_codec.h \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/src/cstream.cpp \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/src/decoder.cpp \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/src/encoder.cpp \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/src/normal_attribute.cpp \
+	E:/Github\ Project/MeshLab/MeshLab-src/src/external/downloads/nexus-2025.05/src/corto/src/tunstall.cpp \
+	C:/Program\ Files/CMake/bin/cmake.exe
