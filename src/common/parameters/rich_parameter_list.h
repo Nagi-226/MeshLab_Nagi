@@ -130,7 +130,7 @@ public:
 	void pushFromQDomElement(QDomElement np);
 
 	void swap(RichParameterList& oth);
-	bool operator==(const RichParameterList& rps);
+	bool operator==(const RichParameterList& rps) const;
 	RichParameterList& operator=(RichParameterList rps);
 
 	iterator begin();

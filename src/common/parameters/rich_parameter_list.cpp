@@ -389,7 +389,7 @@ void RichParameterList::swap(RichParameterList& oth)
  * @return true if two RichParameterList are equal.
  * @see operator== of RichParameter
  */
-bool RichParameterList::operator==( const RichParameterList& rps )
+bool RichParameterList::operator==( const RichParameterList& rps ) const
 {
 	if (rps.paramList.size() != paramList.size())
 		return false;

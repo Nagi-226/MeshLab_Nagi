@@ -26,6 +26,8 @@
 #include "save_project.h"
 
 #include <QTextStream>
+#include <QElapsedTimer>
+#include <QDebug>
 
 #include <wrap/io_trimesh/import_ply.h>
 #include <wrap/io_trimesh/import_stl.h>
@@ -189,6 +191,10 @@ RichParameterList BaseMeshIOPlugin::initPreOpenParameter(const QString &formatNa
 
 void BaseMeshIOPlugin::open(const QString &formatName, const QString &fileName, MeshModel &m, int& mask, const RichParameterList &parlst, CallBackPos *cb)
 {
+	QElapsedTimer timer;
+	timer.start();
+	qInfo().noquote() << "[io_base][open] start format=" << formatName.toUpper() << "file=" << fileName;
+
 	//bool normalsUpdated = false;
 	QString errorMsgFormat = "Error encountered while loading file:\n\"%1\"\n\nError details: %2";
 
@@ -386,10 +392,16 @@ void BaseMeshIOPlugin::open(const QString &formatName, const QString &fileName, 
 //		log("Missing texture files: %s", qUtf8Printable(missingTextureFilesMsg));
 
 	if (cb != NULL)	(*cb)(99, "Done");
+	qInfo().noquote() << "[io_base][open] done format=" << formatName.toUpper() << "file=" << fileName
+				 << "elapsed_ms=" << timer.elapsed() << "vn=" << m.cm.vn << "fn=" << m.cm.fn;
 }
 
 void BaseMeshIOPlugin::save(const QString &formatName, const QString &fileName, MeshModel &m, const int mask, const RichParameterList & par, CallBackPos *cb)
 {
+	QElapsedTimer timer;
+	timer.start();
+	qInfo().noquote() << "[io_base][save] start format=" << formatName.toUpper() << "file=" << fileName;
+
 	QString errorMsgFormat = "Error encountered while exportering file %1:\n%2";
 	string filename = QFile::encodeName(fileName).constData();
 	//string filename = fileName.toUtf8().data();
@@ -512,6 +524,9 @@ void BaseMeshIOPlugin::save(const QString &formatName, const QString &fileName, 
 	else {
 		wrongSaveFormat(formatName);
 	}
+
+	qInfo().noquote() << "[io_base][save] done format=" << formatName.toUpper() << "file=" << fileName
+				 << "elapsed_ms=" << timer.elapsed() << "vn=" << m.cm.vn << "fn=" << m.cm.fn;
 }
 
 QImage BaseMeshIOPlugin::openImage(
